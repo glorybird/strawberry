@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B102D6C1C34F74B003C004C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B102D6B1C34F74B003C004C /* main.m */; };
+		0B102D6F1C34F74B003C004C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B102D6E1C34F74B003C004C /* AppDelegate.m */; };
+		0B102D721C34F74B003C004C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B102D711C34F74B003C004C /* ViewController.m */; };
+		0B102D751C34F74B003C004C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B102D731C34F74B003C004C /* Main.storyboard */; };
+		0B102D771C34F74B003C004C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B102D761C34F74B003C004C /* Assets.xcassets */; };
+		0B102D7A1C34F74B003C004C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B102D781C34F74B003C004C /* LaunchScreen.storyboard */; };
+		0B102D851C34F74B003C004C /* strawberryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B102D841C34F74B003C004C /* strawberryTests.m */; };
+		0B102D911C34F79C003C004C /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B102D901C34F79C003C004C /* Model.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B102D811C34F74B003C004C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B102D5F1C34F74B003C004C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B102D661C34F74B003C004C;
+			remoteInfo = strawberry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B102D671C34F74B003C004C /* strawberry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = strawberry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B102D6B1C34F74B003C004C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B102D6D1C34F74B003C004C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0B102D6E1C34F74B003C004C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0B102D701C34F74B003C004C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0B102D711C34F74B003C004C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0B102D741C34F74B003C004C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B102D761C34F74B003C004C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B102D791C34F74B003C004C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B102D7B1C34F74B003C004C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B102D801C34F74B003C004C /* strawberryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = strawberryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B102D841C34F74B003C004C /* strawberryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = strawberryTests.m; sourceTree = "<group>"; };
+		0B102D861C34F74B003C004C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B102D8F1C34F79C003C004C /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		0B102D901C34F79C003C004C /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B102D641C34F74B003C004C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B102D7D1C34F74B003C004C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B102D5E1C34F74B003C004C = {
+			isa = PBXGroup;
+			children = (
+				0B102D691C34F74B003C004C /* strawberry */,
+				0B102D831C34F74B003C004C /* strawberryTests */,
+				0B102D681C34F74B003C004C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B102D681C34F74B003C004C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B102D671C34F74B003C004C /* strawberry.app */,
+				0B102D801C34F74B003C004C /* strawberryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B102D691C34F74B003C004C /* strawberry */ = {
+			isa = PBXGroup;
+			children = (
+				0B102D6D1C34F74B003C004C /* AppDelegate.h */,
+				0B102D6E1C34F74B003C004C /* AppDelegate.m */,
+				0B102D701C34F74B003C004C /* ViewController.h */,
+				0B102D711C34F74B003C004C /* ViewController.m */,
+				0B102D731C34F74B003C004C /* Main.storyboard */,
+				0B102D761C34F74B003C004C /* Assets.xcassets */,
+				0B102D781C34F74B003C004C /* LaunchScreen.storyboard */,
+				0B102D7B1C34F74B003C004C /* Info.plist */,
+				0B102D6A1C34F74B003C004C /* Supporting Files */,
+				0B102D8F1C34F79C003C004C /* Model.h */,
+				0B102D901C34F79C003C004C /* Model.m */,
+			);
+			path = strawberry;
+			sourceTree = "<group>";
+		};
+		0B102D6A1C34F74B003C004C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B102D6B1C34F74B003C004C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B102D831C34F74B003C004C /* strawberryTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B102D841C34F74B003C004C /* strawberryTests.m */,
+				0B102D861C34F74B003C004C /* Info.plist */,
+			);
+			path = strawberryTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B102D661C34F74B003C004C /* strawberry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B102D891C34F74B003C004C /* Build configuration list for PBXNativeTarget "strawberry" */;
+			buildPhases = (
+				0B102D631C34F74B003C004C /* Sources */,
+				0B102D641C34F74B003C004C /* Frameworks */,
+				0B102D651C34F74B003C004C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = strawberry;
+			productName = strawberry;
+			productReference = 0B102D671C34F74B003C004C /* strawberry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B102D7F1C34F74B003C004C /* strawberryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B102D8C1C34F74B003C004C /* Build configuration list for PBXNativeTarget "strawberryTests" */;
+			buildPhases = (
+				0B102D7C1C34F74B003C004C /* Sources */,
+				0B102D7D1C34F74B003C004C /* Frameworks */,
+				0B102D7E1C34F74B003C004C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B102D821C34F74B003C004C /* PBXTargetDependency */,
+			);
+			name = strawberryTests;
+			productName = strawberryTests;
+			productReference = 0B102D801C34F74B003C004C /* strawberryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B102D5F1C34F74B003C004C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = glory;
+				TargetAttributes = {
+					0B102D661C34F74B003C004C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = U5ZH88TDA3;
+					};
+					0B102D7F1C34F74B003C004C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0B102D661C34F74B003C004C;
+					};
+				};
+			};
+			buildConfigurationList = 0B102D621C34F74B003C004C /* Build configuration list for PBXProject "strawberry" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B102D5E1C34F74B003C004C;
+			productRefGroup = 0B102D681C34F74B003C004C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B102D661C34F74B003C004C /* strawberry */,
+				0B102D7F1C34F74B003C004C /* strawberryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B102D651C34F74B003C004C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B102D7A1C34F74B003C004C /* LaunchScreen.storyboard in Resources */,
+				0B102D771C34F74B003C004C /* Assets.xcassets in Resources */,
+				0B102D751C34F74B003C004C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B102D7E1C34F74B003C004C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B102D631C34F74B003C004C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B102D721C34F74B003C004C /* ViewController.m in Sources */,
+				0B102D6F1C34F74B003C004C /* AppDelegate.m in Sources */,
+				0B102D6C1C34F74B003C004C /* main.m in Sources */,
+				0B102D911C34F79C003C004C /* Model.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B102D7C1C34F74B003C004C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B102D851C34F74B003C004C /* strawberryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B102D821C34F74B003C004C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B102D661C34F74B003C004C /* strawberry */;
+			targetProxy = 0B102D811C34F74B003C004C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B102D731C34F74B003C004C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B102D741C34F74B003C004C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B102D781C34F74B003C004C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B102D791C34F74B003C004C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B102D871C34F74B003C004C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B102D881C34F74B003C004C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B102D8A1C34F74B003C004C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = strawberry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glory.strawberry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0B102D8B1C34F74B003C004C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = strawberry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glory.strawberry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		0B102D8D1C34F74B003C004C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = strawberryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glory.strawberryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strawberry.app/strawberry";
+			};
+			name = Debug;
+		};
+		0B102D8E1C34F74B003C004C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = strawberryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glory.strawberryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/strawberry.app/strawberry";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B102D621C34F74B003C004C /* Build configuration list for PBXProject "strawberry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B102D871C34F74B003C004C /* Debug */,
+				0B102D881C34F74B003C004C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B102D891C34F74B003C004C /* Build configuration list for PBXNativeTarget "strawberry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B102D8A1C34F74B003C004C /* Debug */,
+				0B102D8B1C34F74B003C004C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0B102D8C1C34F74B003C004C /* Build configuration list for PBXNativeTarget "strawberryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B102D8D1C34F74B003C004C /* Debug */,
+				0B102D8E1C34F74B003C004C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B102D5F1C34F74B003C004C /* Project object */;
+}
