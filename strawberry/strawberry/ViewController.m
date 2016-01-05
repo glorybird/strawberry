@@ -23,6 +23,8 @@ static NSInteger const kBallSize = 10;
 @property (nonatomic) CADisplayLink *displayLink;
 @property (nonatomic) CAShapeLayer *linkLayer;
 @property (nonatomic) UIView* ltLink1;
+@property (nonatomic) UIAttachmentBehavior* linkAttachmentBehavior;
+@property (nonatomic, assign) CGFloat dynamicsCount;
 
 @end
 
@@ -32,6 +34,8 @@ static NSInteger const kBallSize = 10;
 - (void)viewDidLoad {
     [super viewDidLoad];
     _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    
     [self setupShapeLayer];
     [self setUpBalloon];
     [self setupDisplayLink];
@@ -79,7 +83,7 @@ static NSInteger const kBallSize = 10;
     [self.ltLink1 setBackgroundColor:[UIColor blackColor]];
     [self.view addSubview:self.ltLink1];
     
-    self.balloon = [[UIView alloc] initWithFrame:CGRectMake(50, 50, kBallSize, kBallSize)];
+    self.balloon = [[UIView alloc] initWithFrame:CGRectMake(55, 50, kBallSize, kBallSize)];
     [self.balloon setBackgroundColor:[UIColor redColor]];
     self.balloon.layer.cornerRadius = kBallSize/2;
     [self.view addSubview:self.balloon];
@@ -87,7 +91,7 @@ static NSInteger const kBallSize = 10;
     UIGravityBehavior* gravity = [[UIGravityBehavior alloc] initWithItems:@[self.balloon]];
     [self.animator addBehavior:gravity];
     
-    UIAttachmentBehavior* linkAttachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:self.ltLink1
+    self.linkAttachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:self.ltLink1
                                                    offsetFromCenter:UIOffsetMake(0, 0)
                                                      attachedToItem:self.balloon
                                                    offsetFromCenter:UIOffsetMake(0, 0)];
@@ -95,7 +99,11 @@ static NSInteger const kBallSize = 10;
                               offsetFromCenter:UIOffsetMake(0, 0)
                               attachedToAnchor:CGPointMake(52.5, 2.5)];
     [self.animator addBehavior:fixedAttachmentBehavior];
-    [self.animator addBehavior:linkAttachmentBehavior];
+    [self.animator addBehavior:self.linkAttachmentBehavior];
+    
+    _collision = [[UICollisionBehavior alloc] initWithItems:@[self.balloon]];
+    [_collision setTranslatesReferenceBoundsIntoBoundary:YES];
+    [self.animator addBehavior:_collision];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,6 +115,19 @@ static NSInteger const kBallSize = 10;
 {
     UIPushBehavior* push = [[UIPushBehavior alloc] initWithItems:@[self.balloon] mode:UIPushBehaviorModeInstantaneous];
     [push setAngle:0 magnitude:.01];
+    [self.animator addBehavior:push];
+}
+
+- (IBAction)cutLine:(id)sender
+{
+    [self.linkLayer removeFromSuperlayer];
+    [self.animator removeBehavior:self.linkAttachmentBehavior];
+    UIPushBehavior* push = [[UIPushBehavior alloc] initWithItems:@[self.balloon] mode:UIPushBehaviorModeInstantaneous];
+    if (self.balloon.center.x >= self.ltLink1.center.x) {
+        [push setAngle:0 magnitude:(self.balloon.center.x - 50) / 15 * .01];
+    } else {
+        [push setAngle:0 magnitude:- (self.balloon.center.x - 50) / 15 * .01];
+    }
     [self.animator addBehavior:push];
 }
 
