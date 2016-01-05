@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,24 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isb-Nr-JD0">
-                                <rect key="frame" x="32" y="24" width="54" height="22"/>
-                                <state key="normal" title="Play"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwn-uH-Aq3">
+                                <rect key="frame" x="0.0" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EOn-zQ-pkV"/>
+                                    <constraint firstAttribute="height" constant="30" id="FqL-6s-Kb1"/>
+                                </constraints>
+                                <state key="normal" title="-&gt;">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PxG-gm-8a7"/>
+                                    <action selector="pushRedBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNi-6c-1oO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="isb-Nr-JD0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="C8W-W3-qwC"/>
-                            <constraint firstItem="isb-Nr-JD0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="FtQ-OZ-imi"/>
+                            <constraint firstItem="rwn-uH-Aq3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZfF-CL-qVa"/>
+                            <constraint firstItem="rwn-uH-Aq3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lEW-Ab-pGh"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416" y="323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KMQ-XP-r8O">
+            <objects>
+                <viewController id="Yad-Ih-9X5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hgt-M8-dH3"/>
+                        <viewControllerLayoutGuide type="bottom" id="FTl-C7-lYj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BZE-gJ-0QH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVh-AN-WIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
